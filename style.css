@@ -216,7 +216,7 @@ section.about{
     height: 150px;
     border:  solid 0.5px;
     border-color: cornflowerblue;
-    box-shadow:  2.5px 0 0 2.5px #dfdfdf ;
+    box-shadow:  2.5px 0 0 2.5px #2A7AE4 ;
 }
 
 /*Sección Hobbies*/
@@ -321,6 +321,7 @@ section.formcontato{
 }
 .formcontato__text{
     margin-left: 40px;
+    
 }
 
 .formcontato--esquerda{
@@ -342,7 +343,7 @@ section.formcontato{
     margin-bottom: 25px;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
+    color: black;
     width: 656px;
     height: 56px;
     border-color: #2A7AE4;
