@@ -1,0 +1,115 @@
+
+
+.proyectos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: linear-gradient(135deg,#fdfcfb 0%,#e2d1c3 100%);
+
+}
+
+
+.animasion-div{
+    display: inline-block;
+}
+.personales{
+   opacity: 0.9;
+}
+.personales__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+.titulo-backend{
+    font-weight: bold;
+    border-right: 2.5px solid cornflowerblue;
+    animation: cursor 1.0s infinite,escribir 2.0s steps(25,end);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.tarjetas{
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    gap: 10px;
+}
+.tarjeta{
+    height: 500px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    background-color: #030;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+.tarjeta:hover{
+    opacity: 1;
+    width: 700px;
+ 
+}
+
+.active{
+    transition: all 0.5s ease-in-out;
+    height: 500px;
+    width: 700px;
+    opacity: 1;
+}
+.icon-container{
+    width: 100px;
+    transition: all 0.5s ease-in-out;
+}
+.icon{
+    stroke: #fff;
+    opacity: 1px;
+}
+.info-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active .info-container{
+    background-image: linear-gradient(98deg,rgba(0,0,0,0.6) 0%,rgba(255,255,255,0) 100% );
+    border-radius: 20px;
+}
+.info{
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    padding: 18px 15px;
+}
+.active .info{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+
+}
+.main{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.sub{
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+}
+
+@keyframes cursor{
+    0%{border-color: transparent}
+    50%{border-color:cornflowerblue}
+
+}
+
+@keyframes escribir {
+    from{width: 0;}
+    to{width: 100%;}
+}
+
